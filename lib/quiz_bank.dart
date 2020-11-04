@@ -60,13 +60,6 @@ class Quiz_Bank {
     _Questionnumber = 0;
   }
 
-  String result() {
-    if (crctanswer > 6) {
-      var a = 'passed';
-      return a;
-    } else {
-      var b = 'Failed';
-      return b;
-    }
-  }
+
+  
 }
