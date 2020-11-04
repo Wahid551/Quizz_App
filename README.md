@@ -20,4 +20,5 @@ samples, guidance on mobile development, and a full API reference.
 
 # Working
 
-![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/73393935/98135520-bcdce480-1ee1-11eb-8515-98d5175b91c5.gif)
+![ezgif com-gif-maker](https://user-images.githubusercontent.com/73393935/98137002-548f0280-1ee3-11eb-872a-ccc7e11ab940.gif)
+
