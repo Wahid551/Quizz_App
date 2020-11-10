@@ -45,10 +45,30 @@ class _QuizAppState extends State<QuizApp> {
   void checkanswer(bool pickanswer) {
     bool correctanswer = quizbank.getCorrectanswer();
     if (quizbank.isFinished() == true) {
+      if (pickanswer == correctanswer) {
+        score = score + 5;
+        crctanswer++;
+        scorekeeper.add(
+          Icon(
+            Icons.check,
+            color: Colors.green,
+            size: 15.0,
+          ),
+        );
+      } else {
+        scorekeeper.add(
+          Icon(
+            Icons.close,
+            color: Colors.red,
+            size: 15.0,
+          ),
+        );
+      }
+
       Alert(
         context: context,
         title: "Finished",
-        desc: "Total Correct Answers are $crctanswer .Your score is $score/60.",
+        desc: "Total Correct Answers are $crctanswer .Your score is $score/65.",
       ).show();
       quizbank.reset();
       scorekeeper = [];
@@ -62,7 +82,7 @@ class _QuizAppState extends State<QuizApp> {
           Icon(
             Icons.check,
             color: Colors.green,
-            size: 25.0,
+            size: 15.0,
           ),
         );
       } else {
@@ -70,7 +90,7 @@ class _QuizAppState extends State<QuizApp> {
           Icon(
             Icons.close,
             color: Colors.red,
-            size: 25.0,
+            size: 15.0,
           ),
         );
       }
@@ -109,7 +129,7 @@ class _QuizAppState extends State<QuizApp> {
           padding: EdgeInsets.symmetric(horizontal: 15.0),
           child: Column(
             children: [
-              Text('Total Questions are 12'),
+              Text('Total Questions are 13'),
               Text('Each Question has 5 Marks'),
             ],
           ),
