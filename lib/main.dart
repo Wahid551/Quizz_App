@@ -52,7 +52,7 @@ class _QuizAppState extends State<QuizApp> {
           Icon(
             Icons.check,
             color: Colors.green,
-            size: 15.0,
+            size: 25.0,
           ),
         );
       } else {
@@ -60,7 +60,7 @@ class _QuizAppState extends State<QuizApp> {
           Icon(
             Icons.close,
             color: Colors.red,
-            size: 15.0,
+            size: 25.0,
           ),
         );
       }
@@ -82,7 +82,7 @@ class _QuizAppState extends State<QuizApp> {
           Icon(
             Icons.check,
             color: Colors.green,
-            size: 15.0,
+            size: 25.0,
           ),
         );
       } else {
@@ -90,7 +90,7 @@ class _QuizAppState extends State<QuizApp> {
           Icon(
             Icons.close,
             color: Colors.red,
-            size: 15.0,
+            size: 25.0,
           ),
         );
       }

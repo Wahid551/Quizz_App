@@ -59,5 +59,4 @@ class Quiz_Bank {
   void reset() {
     _Questionnumber = 0;
   }
-
 }
